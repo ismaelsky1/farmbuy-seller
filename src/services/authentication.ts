@@ -2,7 +2,7 @@ import api from './api';
 import { useLocation, useHistory, Redirect } from "react-router-dom";
 
 export async function login(phone: number) {
-  return await api.post('/sessions', { email: "root@smartpsi.com.br", password: "123123" })
+  return await api.post('/sessions', { email: "***", password: "****" })
     .then(function (response) {
       setToken(response.data.token)
       return true
